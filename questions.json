@@ -1,188 +1,168 @@
 {
-	"games" : [
-		{
-		    "questions" : [
-		        {
-		            "question" : "Which of these are not known as National Holidays in India?",
-		            "content" : [
-		                "15th August",
-		                "26th January",
-		                "2nd October",
-		                "1st April"
-		            ],
-		            "correct" : 3,
-					"timeout" : 30,
-					"audiosound":"sound1"
-		        },
-		        {
-		            "question" : "\"Guru Brahma, Guru Vishnu, Guru Devo Maheshwarah...\" In this shlok, whose glory is explained?",
-		            "content" : [
-		                "Mother",
-		                "Teacher",
-		                "Guru",
-		                "Father"
-		            ],
-		            "correct" : 2,
-					"timeout" : 30,
-					"audiosound":"sound1"
-				},
-				{
-		            "question" : "Which \"Veda\" is the oldest?",
-		            "content" : [
-		                "Saamved",
-		                "Atharvaved",
-		                "Rigved",
-		                "Yajurved"
-		            ],
-		            "correct" : 2,
-					"timeout" : 30,
-					"audiosound":"sound1"
-				},
-				{
-		            "question" : "Lord Rama did not kill one of the below. Find it.",
-		            "content" : [
-		                "Ravana",
-		                "Khar",
-		                "Taadka",
-		                "Indrajeet"
-		            ],
-		            "correct" : 3,
-					"timeout" : 30,
-					"audiosound":"sound1"
-				},
-				{
-		            "question" : "Which of these are not known as National Holidays in India?",
-		            "content" : [
-		                "15th August",
-		                "26th January",
-		                "2nd October",
-		                "1st April"
-		            ],
-					"correct" : 3,
-					"timeout" : 30,
-					"audiosound" : "sound1"
-				},
-				{
-		            "question" : "According to \"Shikshapatri\" if someone hits us or say bad words to us, what should we do?",
-		            "content" : [
-		                "We should say bad words back to them",
-		                "We should not do anything and bear with it",
-		                "We should run away and call our Mom",
-		                "We should kick him out"
-		            ],
-		            "correct" : 1,
-					"timeout" : 45,
-					"audiosound":"sound2"
-				},
-				{
-		            "question" : "According to \"Mahabharata\", Abhimanyu could not survive due to the lack of knowledge of _________ ",
-		            "content" : [
-		                "Agni-view",
-		                "Chakra-view",
-		                "Garud-view",
-		                "Indra-view"
-		            ],
-		            "correct" : 1,
-					"timeout" : 45,
-					"audiosound":"sound2"
-				},
-				{
-		            "question" : "Which of these award is highest \"Civilian\" award of India?",
-		            "content" : [
-		                "Bharat Ratna",
-		                "Ashok Chakra",
-		                "Param Vir Chakra",
-		                "Mahavir Chakra"
-		            ],
-		            "correct" : 0,
-					"timeout" : 45,
-					"audiosound":"sound2"
-				},
-				{
-		            "question" : "Who takes the military salute during the parade on Republic Day?",
-		            "content" : [
-		                "Prime Minister",
-		                "President",
-		                "Vice-President",
-		                "Military General"
-		            ],
-		            "correct" : 0,
-					"timeout" : 45,
-					"audiosound":"sound2"
-				},
-				{
-		            "question" : "When was first Republic Day celebrated?",
-		            "content" : [
-		                "15th August 1947",
-		                "15th August 1950",
-		                "26th January 1950",
-		                "26th January 1951"
-		            ],
-		            "correct" : 3,
-					"timeout" : 45,
-					"audiosound":"sound2"
-				},
-				{
-		            "question" : "Which of these award is highest \"Military\" award of India?",
-		            "content" : [
-		                "Param Vir Chakra",
-		                "Ashok Chakra",
-		                "Kirti Chakra",
-		                "Mahavir Chakra"
-		            ],
-		            "correct" : 0,
-					"timeout" : 45,
-					"audiosound":"sound3"
-				},
-				{
-		            "question" : "The Republic Day parade starts from which location?",
-		            "content" : [
-		                "Rashtrapati Bhavan",
-		                "Red Fort",
-		                "India Gate",
-						"Vijay Chowk"
-		            ],
-					"correct" : 0,
-					"timeout" : 45,
-					"audiosound":"sound3"
-				},
-				{
-		            "question" : "The Republic Day parade starts from which location?",
-		            "content" : [
-		                "Rashtrapati Bhavan",
-		                "Red Fort",
-		                "India Gate",
-						"Vijay Chowk"
-		            ],
-		            "correct" : 0,
-					"timeout" : 45,
-					"audiosound":"sound3"
-				},
-				{
-		            "question" : "The Republic Day parade starts from which location?",
-		            "content" : [
-		                "Rashtrapati Bhavan",
-		                "Red Fort",
-		                "India Gate",
-						"Vijay Chowk"
-		            ],
-		            "correct" : 0,
-					"timeout" : 45,
-					"audiosound":"sound3"
-				},
-				{
-		            "question" : "The Republic Day parade starts from which location?",
-		            "content" : [
-		                "Rashtrapati Bhavan",
-		                "Red Fort",
-		                "India Gate",
-						"Vijay Chowk"
-		            ],
-		            "correct" : 0,
-					"timeout" : 45,
-					"audiosound":"sound3"
-				}
-		    ]
-		}
-	]
+  "games": [
+    {
+      "questions": [
+        {
+          "question": "Which of these are not known as National Holidays in India?",
+          "content": [
+            "15th August",
+            "26th January",
+            "2nd October",
+            "1st April"
+          ],
+          "correct": 3,
+          "timeout": 30,
+          "audiosound": "sound1"
+        },
+        {
+          "question": "\"Guru Brahma, Guru Vishnu, Guru Devo Maheshwarah...\" In this shlok, whose glory is explained?",
+          "content": ["Mother", "Teacher", "Guru", "Father"],
+          "correct": 2,
+          "timeout": 30,
+          "audiosound": "sound1"
+        },
+        {
+          "question": "Which \"Veda\" is the oldest?",
+          "content": ["Saamved", "Atharvaved", "Rigved", "Yajurved"],
+          "correct": 2,
+          "timeout": 30,
+          "audiosound": "sound1"
+        },
+        {
+          "question": "Lord Rama did not kill one of the below. Find it.",
+          "content": ["Ravana", "Khar", "Taadka", "Indrajeet"],
+          "correct": 3,
+          "timeout": 30,
+          "audiosound": "sound1"
+        },
+        {
+          "question": "Which of these are not known as National Holidays in India?",
+          "content": [
+            "15th August",
+            "26th January",
+            "2nd October",
+            "1st April"
+          ],
+          "correct": 3,
+          "timeout": 30,
+          "audiosound": "sound1"
+        },
+        {
+          "question": "According to \"Shikshapatri\" if someone hits us or say bad words to us, what should we do?",
+          "content": [
+            "We should say bad words back to them",
+            "We should not do anything and bear with it",
+            "We should run away and call our Mom",
+            "We should kick him out"
+          ],
+          "correct": 1,
+          "timeout": 45,
+          "audiosound": "sound2"
+        },
+        {
+          "question": "According to \"Mahabharata\", Abhimanyu could not survive due to the lack of knowledge of _________ ",
+          "content": ["Agni-view", "Chakra-view", "Garud-view", "Indra-view"],
+          "correct": 1,
+          "timeout": 45,
+          "audiosound": "sound2"
+        },
+        {
+          "question": "Which of these award is highest \"Civilian\" award of India?",
+          "content": [
+            "Bharat Ratna",
+            "Ashok Chakra",
+            "Param Vir Chakra",
+            "Mahavir Chakra"
+          ],
+          "correct": 0,
+          "timeout": 45,
+          "audiosound": "sound2"
+        },
+        {
+          "question": "Who takes the military salute during the parade on Republic Day?",
+          "content": [
+            "Prime Minister",
+            "President",
+            "Vice-President",
+            "Military General"
+          ],
+          "correct": 0,
+          "timeout": 45,
+          "audiosound": "sound2"
+        },
+        {
+          "question": "When was first Republic Day celebrated?",
+          "content": [
+            "15th August 1947",
+            "15th August 1950",
+            "26th January 1950",
+            "26th January 1951"
+          ],
+          "correct": 3,
+          "timeout": 45,
+          "audiosound": "sound2"
+        },
+        {
+          "question": "Which of these award is highest \"Military\" award of India?",
+          "content": [
+            "Param Vir Chakra",
+            "Ashok Chakra",
+            "Kirti Chakra",
+            "Mahavir Chakra"
+          ],
+          "correct": 0,
+          "timeout": 45,
+          "audiosound": "sound3"
+        },
+        {
+          "question": "The Republic Day parade starts from which location?",
+          "content": [
+            "Rashtrapati Bhavan",
+            "Red Fort",
+            "India Gate",
+            "Vijay Chowk"
+          ],
+          "correct": 0,
+          "timeout": 45,
+          "audiosound": "sound3"
+        },
+        {
+          "question": "The Republic Day parade starts from which location?",
+          "content": [
+            "Rashtrapati Bhavan",
+            "Red Fort",
+            "India Gate",
+            "Vijay Chowk"
+          ],
+          "correct": 0,
+          "timeout": 45,
+          "audiosound": "sound3"
+        },
+        {
+          "question": "The Republic Day parade starts from which location?",
+          "content": [
+            "Rashtrapati Bhavan",
+            "Red Fort",
+            "India Gate",
+            "Vijay Chowk"
+          ],
+          "correct": 0,
+          "timeout": 45,
+          "audiosound": "sound3"
+        },
+        {
+          "question": "The Republic Day parade starts from which location?",
+          "content": [
+            "Rashtrapati Bhavan",
+            "Red Fort",
+            "India Gate",
+            "Vijay Chowk"
+          ],
+          "correct": 0,
+          "timeout": 45,
+          "audiosound": "sound3"
+        }
+      ]
+    }
+  ]
 }

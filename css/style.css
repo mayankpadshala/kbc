@@ -188,6 +188,10 @@ audio {
   background: url("../img/audience.png") no-repeat 0 0;
 }
 
+#timer-img {
+  background: url("../img/icons8-time-filled-50.png") no-repeat 0 0;
+}
+
 #audienceDis {
   background: url("../img/audience-disabled.png") no-repeat 0 0;
 }
@@ -245,6 +249,15 @@ audio {
   width: 64px;
   height: 64px;
   margin-left: 12px;
+  float: left;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+.options-timer-img {
+  width: 55px;
+  height: 64px;
+  margin-left: 5px;
   float: left;
   background-position: 0 0;
   cursor: pointer;
