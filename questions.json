@@ -31,10 +31,10 @@
 		            "content" : [
 		                "Saamved",
 		                "Atharvaved",
-		                "Rugved",
+		                "Rigved",
 		                "Yajurved"
 		            ],
-		            "correct" : 3,
+		            "correct" : 2,
 					"timeout" : 30,
 					"audiosound":"sound1"
 				},
@@ -58,7 +58,7 @@
 		                "2nd October",
 		                "1st April"
 		            ],
-					"correct" : 2,
+					"correct" : 3,
 					"timeout" : 30,
 					"audiosound" : "sound1"
 				},

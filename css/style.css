@@ -142,6 +142,10 @@ audio {
   background: url("../img/50-50.png") no-repeat 0 0;
 }
 
+#fiftyDis {
+  background: url("../img/50-50-disabled.png") no-repeat 0 0;
+}
+
 #nxt-btn {
   background: url("../img/ic_arrow_forward.png") no-repeat 0 0;
   height: 64px;
@@ -160,8 +164,16 @@ audio {
   background: url("../img/phone-friend.png") no-repeat 0 0;
 }
 
+#phone-friendDis {
+  background: url("../img/phone-friend-disabled.png") no-repeat 0 0;
+}
+
 #audience {
   background: url("../img/audience.png") no-repeat 0 0;
+}
+
+#audienceDis {
+  background: url("../img/audience-disabled.png") no-repeat 0 0;
 }
 
 #timer-start {

@@ -10,8 +10,7 @@
 *         like this: x,xxx.xx
 */
 Number.prototype.money = function(fixed, decimalDelim, breakDelim){
-    var n = this;
-    
+    var n = this,
     fixed = isNaN(fixed = Math.abs(fixed)) ? 2 : fixed,
     decimalDelim = decimalDelim == undefined ? "." : decimalDelim,
     breakDelim = breakDelim == undefined ? "," : breakDelim,
@@ -159,6 +158,7 @@ document.onkeydown=function(e){
     // Gets the answer text of a specified question index (0-3)
     // from the current question
     self.getAnswerText = function(index) {
+        // debugger;
         return self.questions[self.level() - 1].content[index];
     }
 
@@ -185,7 +185,8 @@ document.onkeydown=function(e){
             self.variable = setInterval(self.updateDisplay, 1000);
             
 
-        $(event.target).fadeOut('slow');
+        // $(event.target).fadeOut('slow');
+        document.getElementById('fifty').id = "fiftyDis";
         var correct = this.questions[self.level() - 1].correct;
         var first = (correct + 1) % 4;
         var second = (first + 1) % 4;
@@ -263,7 +264,7 @@ self.seeAns = function(item,event) {
              else if(self.questions[self.level() - 1].correct ==2)
              g.id = 'answer-three';
              else if(self.questions[self.level() - 1].correct ==3)
-             g.id = 'answer-three';
+             g.id = 'answer-four';
 
              $("#" + g.id).slideUp('slow', function() {
                 $("#" + g.id).css('background', 'green').slideDown('slow', function() {
@@ -279,10 +280,14 @@ self.seeAns = function(item,event) {
 }
 
     // Fades out an option used if possible
-    self.fadeOutOption = function(item, event) {
+    self.fadeOutAudience = function(item, event) {
+      
         if(self.transitioning)
             return;
-        $(event.target).fadeOut('slow');
+        // $(event.target).fadeOut('slow');
+        // console.log($(event.target));
+
+        document.getElementById('audience').id = "audienceDis";
 
         soundHandle.pause();
         soundHandle.currentTime = 0;
@@ -291,12 +296,35 @@ self.seeAns = function(item,event) {
 
 
         clearInterval(self.variable);
-        self.KAKA = 19;
-         $('#timer').find('.value').text(self.KAKA);
-            self.variable = setInterval(self.updateDisplay, 1000);
+        //self.KAKA = 19;
+        //$('#timer').find('.value').text(self.KAKA);
+        //self.variable = setInterval(self.updateDisplay, 1000);
 
 
         
+    }
+
+    self.fadeOutPhone = function(item, event) {
+
+        if(self.transitioning)
+            return;
+        // $(event.target).fadeOut('slow');
+        // console.log($(event.target));
+
+        document.getElementById('phone-friend').id = "phone-friendDis";
+
+        soundHandle.pause();
+        soundHandle.currentTime = 0;
+
+        startSound('phoneFriend', false);
+
+
+        clearInterval(self.variable);
+        //self.KAKA = 19;
+        //$('#timer').find('.value').text(self.KAKA);
+        //self.variable = setInterval(self.updateDisplay, 1000);
+
+
     }
 
     // Attempts to answer the question with the specified
@@ -373,10 +401,10 @@ self.seeAns = function(item,event) {
             $("#" + elm).css('background', 'green').slideDown('slow', function() {
                 self.money($(".active").data('amt'));
                 if(self.level() + 1 > 15) {
-                    $("#game").fadeOut('slow', function() {
-                        $("#game-over").html('You Win!');
-                        $("#game-over").fadeIn('slow');
-                    });
+                    // $("#game").fadeOut('slow', function() {
+                    //     $("#game-over").html('You Win!');
+                    //     $("#game-over").fadeIn('slow');
+                    // });
                 } else {
                     $("#nxt-btn").show();
                 }
