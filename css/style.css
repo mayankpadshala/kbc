@@ -93,10 +93,14 @@ audio {
 
 #question-box {
   /*background: url("../img/qbg.png") no-repeat center;*/
-  width: 960px;
+  width: 930px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 2px;
   font-size: 2em;
+  border: 3px solid white;
+  border-radius: 1em;
+  margin-top: 1em;
+  margin-bottom: 20px;
 }
 
 .big-text {
@@ -207,7 +211,7 @@ audio {
 }
 
 .answer {
-  width: 45%;
+  width: 46%;
   border: 3px solid white;
   margin: 5px;
   padding: 0px 10px;
@@ -232,7 +236,9 @@ audio {
   font-size: 2em;
   align-self: auto;
   float: right;
-  padding: 20px;
+  padding: 10px;
+  border: 3px solid white;
+  border-radius: 10px;
 }
 
 .options-button {

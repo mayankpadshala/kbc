@@ -9,14 +9,12 @@ Author: Aaron Nech
 -->
 <html>
   <head>
-
     <link
       href="http://fonts.googleapis.com/css?family=Roboto+Slab"
       rel="stylesheet"
       type="text/css"
     />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-
   </head>
   <body>
     <!-- HTML5 Audio tags - weakly supported, works in Chrome(tested) -->
@@ -28,7 +26,7 @@ Author: Aaron Nech
     <audio id="sound4" src="sound/sound4.mp3"></audio>
 
     <audio id="soundselect" src="sound/Question.mp3"></audio>
-    
+
     <audio id="selectAns" src="sound/finalAnswer.mp3"></audio>
 
     <!-- Main Audio -->
@@ -54,13 +52,11 @@ Author: Aaron Nech
           
         </div>
       </div> -->
-      <div>
-      <img src="img/logo.png" id="logo-start">
-      </div>
+      <div><img src="img/logo.png" id="logo-start" /></div>
       <div id="preStart">
         <!-- <select id="problem-set"> </select> -->
-       <!--  <button id="start">Start!</button> -->
-       <button id="start"type="button">Start</button>
+        <!--  <button id="start">Start!</button> -->
+        <button id="start" type="button">Start</button>
       </div>
       <div id="preStart">
         <!-- <select id="problem-set"> </select>
@@ -118,7 +114,7 @@ Author: Aaron Nech
             data-amt="11"
             data-lvl="11"
           >
-           Level : 11
+            Level : 11
           </li>
           <li
             data-bind="css: {active: level() == 10}"
@@ -127,94 +123,59 @@ Author: Aaron Nech
           >
             Level : 10
           </li>
-          <li
-            data-bind="css: {active: level() == 9}"
-            data-amt="9"
-            data-lvl="9"
-          >
+          <li data-bind="css: {active: level() == 9}" data-amt="9" data-lvl="9">
             Level : 9
           </li>
-          <li
-            data-bind="css: {active: level() == 8}"
-            data-amt="8"
-            data-lvl="8"
-          >
+          <li data-bind="css: {active: level() == 8}" data-amt="8" data-lvl="8">
             Level : 8
           </li>
-          <li
-            data-bind="css: {active: level() == 7}"
-            data-amt="7"
-            data-lvl="7"
-          >
+          <li data-bind="css: {active: level() == 7}" data-amt="7" data-lvl="7">
             Level : 7
           </li>
-          <li
-            data-bind="css: {active: level() == 6}"
-            data-amt="6"
-            data-lvl="6"
-          >
+          <li data-bind="css: {active: level() == 6}" data-amt="6" data-lvl="6">
             Level : 6
           </li>
-          <li
-            data-bind="css: {active: level() == 5}"
-            data-amt="5"
-            data-lvl="5"
-          >
+          <li data-bind="css: {active: level() == 5}" data-amt="5" data-lvl="5">
             Level : 5
           </li>
-          <li
-            data-bind="css: {active: level() == 4}"
-            data-amt="5"
-            data-lvl="4"
-          >
+          <li data-bind="css: {active: level() == 4}" data-amt="5" data-lvl="4">
             Level : 4
           </li>
-          <li
-            data-bind="css: {active: level() == 3}"
-            data-amt="3"
-            data-lvl="3"
-          >
+          <li data-bind="css: {active: level() == 3}" data-amt="3" data-lvl="3">
             Level : 3
           </li>
-          <li
-            data-bind="css: {active: level() == 2}"
-            data-amt="2"
-            data-lvl="2"
-          >
+          <li data-bind="css: {active: level() == 2}" data-amt="2" data-lvl="2">
             Level : 2
           </li>
-          <li
-            data-bind="css: {active: level() == 1}"
-            data-amt="1"
-            data-lvl="1"
-          >
+          <li data-bind="css: {active: level() == 1}" data-amt="1" data-lvl="1">
             Level : 1
           </li>
         </ul>
         <div class="clear"></div>
       </div>
       <div id="options">
-        <div id="fifty" class="options-button" data-bind="click: fifty"></div>
-        <div
-          id="phone-friend"
-          class="options-button"
-          data-bind="click: fadeOutPhone"
-        ></div>
-        <div
-          id="audience"
-          class="options-button"
-          data-bind="click: fadeOutAudience"
-        ></div>
-        
+        <div id="option-container">
+          <div id="fifty" class="options-button" data-bind="click: fifty"></div>
+          <div
+            id="phone-friend"
+            class="options-button"
+            data-bind="click: fadeOutPhone"
+          ></div>
+          <div
+            id="audience"
+            class="options-button"
+            data-bind="click: fadeOutAudience"
+          ></div>
+        </div>
         <div id="timer" class="second-timer">
           <span class="value">50</span> seconds
         </div>
-        	<!-- <div id="money">
+        <!-- <div id="money">
           		Level : 
           		<span data-bind="text: formatMoney()"></span>
           	</div> -->
       </div>
-      
+
       <div id="question-box">
         <span class="big-text">Q:</span>
         <span class="content" data-bind="text: getQuestionText()"></span>
@@ -252,7 +213,7 @@ Author: Aaron Nech
           <span class="big-text">D.</span
           ><span data-bind="text: getAnswerText(3)"></span>
         </div>
-        <div id="admin_ans"></div>
+
         <!-- <div id="options-timer"> -->
         <!-- <div>
           <button
@@ -270,26 +231,23 @@ Author: Aaron Nech
             hidden
           ></button>
         </div> -->
-    	<!-- </div> -->
+        <!-- </div> -->
 
         <div id="options-timer">
-        
           <button
             id="nxt-btn"
             class="options-button1"
             data-bind="click: nextBut"
             hidden
           ></button>
-        
-       
+
           <button
             id="see-ans"
             class="options-button2"
             data-bind="click: seeAns"
             hidden
           ></button>
-        
-        
+
           <div
             id="timer-start"
             class="options-button1"
@@ -300,9 +258,7 @@ Author: Aaron Nech
             class="options-button1"
             data-bind="click: timerStop"
           ></div>
-  
         </div>
-
       </div>
     </div>
 
@@ -313,7 +269,6 @@ Author: Aaron Nech
     <script>
       //Clear local storage
       //window.localStorage.clear();
-
 
       // is_admin = window.location.search.indexOf("admin");
       // console.log(is_admin);
