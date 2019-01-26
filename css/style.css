@@ -60,6 +60,10 @@ audio {
   font-size: 1.2em;
 }
 
+#levels > li {
+  margin: 0.3em;
+}
+
 .active {
   background-color: green;
   font-weight: bold;
