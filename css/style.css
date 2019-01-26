@@ -1,5 +1,5 @@
 body {
-  background:black;
+  background: black;
   font-family: "Roboto Slab", serif;
 }
 
@@ -9,16 +9,16 @@ audio {
 
 #problem-set {
   margin-right: 16px;
-  font-size:inherit;
+  font-size: inherit;
 }
 
 #start {
-  font-size:inherit;
+  font-size: inherit;
 }
 
 .flex-container {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .flex-container > div {
@@ -72,8 +72,6 @@ audio {
   height: 70px;
   margin-top: 160px;
 }
-
-
 
 .content {
   color: white;
@@ -195,9 +193,11 @@ audio {
 }
 
 .answer {
-  width: 47.5%;
-  border: 5px solid white;
+  width: 45%;
+  border: 3px solid white;
   margin: 5px;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 #pre-start {
@@ -238,7 +238,6 @@ audio {
   background-position: 0 0;
   cursor: pointer;
 }
-
 
 .options-button2 {
   width: 64px;
