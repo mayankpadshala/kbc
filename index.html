@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<!--
+Who Wants to Be a Millionaire Quiz Game Markup
+Intended to Play a Single Game.
+WWBAM materials used under fair use for academic/scholar use, should not be
+distributed otherwise.
+
+Author: Aaron Nech
+-->
+<html>
+  <head>
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto+Slab"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HTML5 Audio tags - weakly supported, works in Chrome(tested) -->
+    <audio id="background" src="sound/background.mp3"></audio>
+    <audio id="rightsound" src="sound/right.mp3"></audio>
+    <audio id="sound1" src="sound/sound1.mp3"></audio>
+    <audio id="sound2" src="sound/sound2.mp3"></audio>
+    <audio id="sound3" src="sound/sound3.mp3"></audio>
+    <audio id="sound4" src="sound/sound4.mp3"></audio>
+
+    <audio id="soundselect" src="sound/Question.mp3"></audio>
+    
+    <audio id="selectAns" src="sound/finalAnswer.mp3"></audio>
+
+    <!-- Main Audio -->
+    <audio id="mainTheme" src="sound/mainTheme.mp3"></audio>
+    <audio id="letsPlay" src="sound/letsPlay.mp3"></audio>
+    <audio id="next" src="sound/Next.mp3"></audio>
+    <audio id="wrongAnswer" src="sound/wrongAnswer.mp3"></audio>
+    <audio id="phoneFriend" src="sound/phoneFriend.mp3"></audio>
+
+    <!-- Before the game begins problem set selection -->
+    <div id="pre-start" class="flex-container">
+      <div>
+        <img src="img/logo.png" id="logo-start">
+      </div>
+      <div id="preStart">
+        <!-- <select id="problem-set"> </select> -->
+        <button id="start">Start!</button>
+      </div>
+      <div id="preStart">
+        <!-- <select id="problem-set"> </select>
+        <button id="start">Start!</button> -->
+      </div>
+      <div id="preStart">
+        <!-- <select id="problem-set"> </select> -->
+        <!-- <button id="start">Start!</button> -->
+      </div>
+      <div id="preStart">
+        <select id="problem-set"> </select>
+        <!-- <button id="start">Start!</button> -->
+      </div>
+    </div>
+
+    <!-- Shown when the player wins/loses -->
+    <div id="game-over"></div>
+    <div id="game-over-money"></div>
+
+    <!-- The actual game markup -->
+    <div id="game">
+      <div id="top">
+        <img src="img/logo.png" id="logo" />
+        <ul id="levels">
+          <li
+            data-bind="css: {active: level() == 15}"
+            data-amt="15"
+            data-lvl="15"
+          >
+            Level : 15
+          </li>
+          <li
+            data-bind="css: {active: level() == 14}"
+            data-amt="14"
+            data-lvl="14"
+          >
+            Level : 14
+          </li>
+          <li
+            data-bind="css: {active: level() == 13}"
+            data-amt="13"
+            data-lvl="13"
+          >
+            Level : 13
+          </li>
+          <li
+            data-bind="css: {active: level() == 12}"
+            data-amt="12"
+            data-lvl="12"
+          >
+            Level : 12
+          </li>
+          <li
+            data-bind="css: {active: level() == 11}"
+            data-amt="11"
+            data-lvl="11"
+          >
+           Level : 11
+          </li>
+          <li
+            data-bind="css: {active: level() == 10}"
+            data-amt="10"
+            data-lvl="10"
+          >
+            Level : 10
+          </li>
+          <li
+            data-bind="css: {active: level() == 9}"
+            data-amt="9"
+            data-lvl="9"
+          >
+            Level : 9
+          </li>
+          <li
+            data-bind="css: {active: level() == 8}"
+            data-amt="8"
+            data-lvl="8"
+          >
+            Level : 8
+          </li>
+          <li
+            data-bind="css: {active: level() == 7}"
+            data-amt="7"
+            data-lvl="7"
+          >
+            Level : 7
+          </li>
+          <li
+            data-bind="css: {active: level() == 6}"
+            data-amt="6"
+            data-lvl="6"
+          >
+            Level : 6
+          </li>
+          <li
+            data-bind="css: {active: level() == 5}"
+            data-amt="5"
+            data-lvl="5"
+          >
+            Level : 5
+          </li>
+          <li
+            data-bind="css: {active: level() == 4}"
+            data-amt="5"
+            data-lvl="4"
+          >
+            Level : 4
+          </li>
+          <li
+            data-bind="css: {active: level() == 3}"
+            data-amt="3"
+            data-lvl="3"
+          >
+            Level : 3
+          </li>
+          <li
+            data-bind="css: {active: level() == 2}"
+            data-amt="2"
+            data-lvl="2"
+          >
+            Level : 2
+          </li>
+          <li
+            data-bind="css: {active: level() == 1}"
+            data-amt="1"
+            data-lvl="1"
+          >
+            Level : 1
+          </li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <div id="options">
+        <div id="fifty" class="options-button" data-bind="click: fifty"></div>
+        <div
+          id="phone-friend"
+          class="options-button"
+          data-bind="click: fadeOutOption"
+        ></div>
+        <div
+          id="audience"
+          class="options-button"
+          data-bind="click: fadeOutOption"
+        ></div>
+        
+        <div id="timer" class="second-timer">
+          <span class="value">50</span> seconds
+        </div>
+        	<!-- <div id="money">
+          		Level : 
+          		<span data-bind="text: formatMoney()"></span>
+          	</div> -->
+      </div>
+      
+      <div id="question-box">
+        <span class="big-text">Q:</span>
+        <span class="content" data-bind="text: getQuestionText()"></span>
+      </div>
+      <div id="answer-box">
+        <div
+          id="answer-one"
+          class="answer"
+          data-bind="click: function() { answerQuestion(0, $element.id) }"
+        >
+          <span class="big-text">A.</span
+          ><span data-bind="text: getAnswerText(0)"></span>
+        </div>
+        <div
+          id="answer-two"
+          class="answer"
+          data-bind="click: function() { answerQuestion(1, $element.id) }"
+        >
+          <span class="big-text">B.</span
+          ><span data-bind="text: getAnswerText(1)"></span>
+        </div>
+        <div
+          id="answer-three"
+          class="answer"
+          data-bind="click: function() { answerQuestion(2, $element.id) }"
+        >
+          <span class="big-text">C.</span
+          ><span data-bind="text: getAnswerText(2)"></span>
+        </div>
+        <div
+          id="answer-four"
+          class="answer"
+          data-bind="click: function() { answerQuestion(3, $element.id) }"
+        >
+          <span class="big-text">D.</span
+          ><span data-bind="text: getAnswerText(3)"></span>
+        </div>
+        <div id="admin_ans"></div>
+        <!-- <div id="options-timer"> -->
+        <!-- <div>
+          <button
+            id="nxt-btn"
+            class="options-button1"
+            data-bind="click: nextBut"
+            hidden
+          ></button>
+        </div>
+        <div>
+          <button
+            id="see-ans"
+            class="options-button2"
+            data-bind="click: seeAns"
+            hidden
+          ></button>
+        </div> -->
+    	<!-- </div> -->
+
+        <div id="options-timer">
+        
+          <button
+            id="nxt-btn"
+            class="options-button1"
+            data-bind="click: nextBut"
+            hidden
+          ></button>
+        
+       
+          <button
+            id="see-ans"
+            class="options-button2"
+            data-bind="click: seeAns"
+            hidden
+          ></button>
+        
+        
+          <div
+            id="timer-start"
+            class="options-button1"
+            data-bind="click: timerStart"
+          ></div>
+          <div
+            id="timer-stop"
+            class="options-button1"
+            data-bind="click: timerStop"
+          ></div>
+  
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Script inclusion: JQuery for effects, Knockout for MVVM, millionaire.js for application -->
+    <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/knockout-3.0.0.js"></script>
+    <script type="text/javascript" src="js/millionaire.js"></script>
+    <script>
+      //Clear local storage
+      //window.localStorage.clear();
+
+
+      // is_admin = window.location.search.indexOf("admin");
+      // console.log(is_admin);
+
+      // if (is_admin >= 0) {
+      //   window.localStorage.setItem("status", "active");
+      // } else {
+      //   setInterval(function testMe() {
+      //     status = window.localStorage.getItem("status");
+      //     console.log(window.localStorage.getItem("status"));
+      //     if (status == "active") {
+      //       console.log("status is active");
+      //     }
+      //   }, 1000);
+      // }
+
+      /* function testMe11() {
+        console.log("status is active");
+        if (status == "active") {
+          console.log("status is active");
+        }
+      } */
+    </script>
+  </body>
+</html>
