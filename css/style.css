@@ -55,13 +55,13 @@ audio {
   margin: 0;
   padding: 0;
   color: white;
-  text-align: right;
-  margin-top: 40px;
-  font-size: 1em;
+  text-align: left;
+  margin-top: 20px;
+  font-size: 1.2em;
 }
 
 .active {
-  color: green;
+  background-color: green;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -87,7 +87,7 @@ audio {
   width: 960px;
   margin: 0 auto;
   padding: 10px;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .big-text {
@@ -191,7 +191,7 @@ audio {
   display: flex;
   flex-wrap: wrap;
   color: white;
-  font-size: 1.1em;
+  font-size: 1.8em;
   text-align: left;
   width: 960px;
   margin: 0 auto;
@@ -201,7 +201,7 @@ audio {
   width: 45%;
   border: 3px solid white;
   margin: 5px;
-  padding: 10px;
+  padding: 0px 10px;
   border-radius: 20px;
 }
 
