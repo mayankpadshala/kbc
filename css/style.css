@@ -54,8 +54,9 @@ audio {
   list-style: none;
   margin: 0;
   padding: 0;
+  min-width: 150px;
   color: white;
-  text-align: left;
+  text-align: center;
   margin-top: 20px;
   font-size: 1.2em;
 }
@@ -65,9 +66,12 @@ audio {
 }
 
 .active {
-  background-color: green;
   font-weight: bold;
   text-decoration: underline;
+  background-color: #ff7e00;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 1.5em;
 }
 
 #options {
