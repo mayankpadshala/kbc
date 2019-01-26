@@ -10,7 +10,8 @@
 *         like this: x,xxx.xx
 */
 Number.prototype.money = function(fixed, decimalDelim, breakDelim){
-    var n = this,
+    var n = this;
+    
     fixed = isNaN(fixed = Math.abs(fixed)) ? 2 : fixed,
     decimalDelim = decimalDelim == undefined ? "." : decimalDelim,
     breakDelim = breakDelim == undefined ? "," : breakDelim,
