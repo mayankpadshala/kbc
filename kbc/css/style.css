@@ -1,0 +1,242 @@
+body {
+  background:black;
+  font-family: "Roboto Slab", serif;
+}
+
+audio {
+  display: none;
+}
+
+#problem-set {
+  margin-right: 16px;
+  font-size:inherit;
+}
+
+#start {
+  font-size:inherit;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column
+}
+
+.flex-container > div {
+  margin: 10px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+#game {
+  display: none;
+  text-align: center;
+}
+
+#top {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#levels {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: right;
+  margin-top: 40px;
+  font-size: 1em;
+}
+
+.active {
+  color: green;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#options {
+  width: 960px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+#options-timer {
+  width: 800px;
+  height: 70px;
+  margin-top: 160px;
+}
+
+
+
+.content {
+  color: white;
+}
+
+#question-box {
+  /*background: url("../img/qbg.png") no-repeat center;*/
+  width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.big-text {
+  color: #ff7e00;
+  font-size: 2em;
+  margin-right: 15px;
+}
+
+#money {
+  font-size: 1.9em;
+  font-weight: bold;
+  color: green;
+  float: right;
+  display: block;
+  height: 50px;
+  padding-top: 20px;
+}
+
+#logo-start {
+  text-align: center;
+  width: 480px;
+  margin-top: 60px;
+}
+
+#logo {
+  width: 480px;
+  float: left;
+  margin-left: 240px;
+  margin-top: 60px;
+}
+
+#game-over {
+  display: none;
+  font-size: 5em;
+  font-weight: bold;
+  color: white;
+  width: 980px;
+  margin-top: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#game-over-money {
+  display: none;
+  font-size: 8em;
+  font-weight: bold;
+  color: green;
+  width: 980px;
+  margin-top: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#fifty {
+  background: url("../img/50-50.png") no-repeat 0 0;
+}
+
+#nxt-btn {
+  background: url("../img/ic_arrow_forward.png") no-repeat 0 0;
+  height: 64px;
+  width: 64px;
+  float: right;
+}
+
+#see-ans {
+  background: url("../img/ic_arrow_forward.png") no-repeat 0 0;
+  height: 64px;
+  width: 64px;
+  float: right;
+}
+
+#phone-friend {
+  background: url("../img/phone-friend.png") no-repeat 0 0;
+}
+
+#audience {
+  background: url("../img/audience.png") no-repeat 0 0;
+}
+
+#timer-start {
+  background: url("../img/play.png") no-repeat 0 0;
+}
+
+#timer-stop {
+  background: url("../img/pause.png") no-repeat 0 0;
+}
+
+#answer-box {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 1.1em;
+  text-align: left;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.answer {
+  width: 47.5%;
+  border: 5px solid white;
+  margin: 5px;
+}
+
+#pre-start {
+  display: none;
+}
+
+#preStart {
+  margin-top: 64px;
+}
+
+.answer:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.second-timer {
+  color: white;
+  font-size: 1.5em;
+  align-self: auto;
+  float: left;
+  padding: 20px;
+}
+
+.options-button {
+  width: 64px;
+  height: 64px;
+  margin-left: 12px;
+  float: left;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+.options-button1 {
+  width: 64px;
+  height: 64px;
+  margin-left: 12px;
+  float: left;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+
+.options-button2 {
+  width: 64px;
+  height: 64px;
+  margin-left: 12px;
+  float: right;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+.options-button:hover {
+  background-position: 0 -64px !important;
+}
